@@ -1,5 +1,5 @@
 # 1 "src/kernel.c"
-# 1 "/home/rlk/wxwang/benos//"
+# 1 "/home/rlk/wxwang/riscv_os/benos//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "src/kernel.c"
@@ -15,7 +15,7 @@ void uart_send_string(char* str);
 extern void load_store_test(void);
 extern void lb3_2_test(void);
 extern void lib_33_memcpy(void);
-
+extern void __bit16_memset(void *s, int c, int count);
 
 void kernel_main(void)
 {
@@ -24,7 +24,8 @@ void kernel_main(void)
 
 
 
- lib_33_memcpy();
+
+ __bit16_memset((void *)0x80210000,0xFF,5);
  while (1) {
   ;
  }

@@ -17,10 +17,14 @@ kernel_main:
 	.cfi_offset 1, -8
 	.loc 1 9 2
 	call	uart_init
-	.loc 1 14 2
-	call	lib_33_memcpy
+	.loc 1 15 2
+	li	a2,5
+	li	a1,255
+	li	a5,134352896
+	slli	a0,a5,4
+	call	__bit16_memset
 .L2:
-	.loc 1 15 8 discriminator 1
+	.loc 1 16 8 discriminator 1
 	j	.L2
 	.cfi_endproc
 .LFE0:
@@ -112,13 +116,13 @@ kernel_main:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF2:
+	.string	"/home/rlk/wxwang/riscv_os/benos"
 .LASF3:
 	.string	"kernel_main"
 .LASF1:
 	.string	"src/kernel.c"
 .LASF0:
 	.string	"GNU C17 9.3.0 -mcmodel=medany -mabi=lp64 -march=rv64imafd -g -O0 -fno-PIE -fomit-frame-pointer"
-.LASF2:
-	.string	"/home/rlk/wxwang/benos"
 	.ident	"GCC: (Ubuntu 9.3.0-10ubuntu1) 9.3.0"
 	.section	.note.GNU-stack,"",@progbits

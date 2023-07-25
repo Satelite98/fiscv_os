@@ -655,8 +655,10 @@ uart_init:
 	.string	"uart16550_clock"
 .LASF7:
 	.string	"GNU C17 9.3.0 -mcmodel=medany -mabi=lp64 -march=rv64imafd -g -O0 -fno-PIE -fomit-frame-pointer"
-.LASF9:
-	.string	"/home/rlk/wxwang/benos"
+.LASF6:
+	.string	"char"
+.LASF5:
+	.string	"uart_send_string"
 .LASF3:
 	.string	"unsigned char"
 .LASF10:
@@ -665,9 +667,7 @@ uart_init:
 	.string	"divisor"
 .LASF8:
 	.string	"src/uart.c"
-.LASF5:
-	.string	"uart_send_string"
-.LASF6:
-	.string	"char"
+.LASF9:
+	.string	"/home/rlk/wxwang/riscv_os/benos"
 	.ident	"GCC: (Ubuntu 9.3.0-10ubuntu1) 9.3.0"
 	.section	.note.GNU-stack,"",@progbits

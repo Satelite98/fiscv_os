@@ -1,5 +1,5 @@
 # 1 "src/lb3_1.S"
-# 1 "/home/rlk/wxwang/benos//"
+# 1 "/home/rlk/wxwang/riscv_os/benos//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "src/lb3_1.S"

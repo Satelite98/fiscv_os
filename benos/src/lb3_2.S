@@ -18,5 +18,15 @@ lib_33_memcpy:
     
     ret 
 
-.global lib_34_memset
-lib_34_memset:
+
+.global __bit16_memset
+__bit16_memset:
+    li t0, 0
+
+loop:
+    sd a1, (a0)
+    addi a0, a0, 8
+    addi t0, t0, 1
+    blt t0, a2, loop
+
+    ret 

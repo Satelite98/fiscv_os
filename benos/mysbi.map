@@ -65,10 +65,10 @@ OUTPUT(build_sbi/mysbi.elf elf64-littleriscv)
  .debug_line    0x0000000000000000       0xd1 build_sbi/sbi_main_c.o
  .debug_line    0x00000000000000d1       0x53 build_sbi/sbi_boot_s.o
 
-.debug_str      0x0000000000000000       0xbb
- .debug_str     0x0000000000000000       0xa0 build_sbi/sbi_main_c.o
- .debug_str     0x00000000000000a0       0x1b build_sbi/sbi_boot_s.o
-                                         0x32 (size before relaxing)
+.debug_str      0x0000000000000000       0xc4
+ .debug_str     0x0000000000000000       0xa9 build_sbi/sbi_main_c.o
+ .debug_str     0x00000000000000a9       0x1b build_sbi/sbi_boot_s.o
+                                         0x3b (size before relaxing)
 
 .comment        0x0000000000000000       0x24
  .comment       0x0000000000000000       0x24 build_sbi/sbi_main_c.o

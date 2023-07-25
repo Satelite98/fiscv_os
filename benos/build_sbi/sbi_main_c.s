@@ -354,13 +354,13 @@ sbi_main:
 	.section	.debug_str,"MS",@progbits,1
 .LASF4:
 	.string	"long unsigned int"
+.LASF2:
+	.string	"/home/rlk/wxwang/riscv_os/benos"
 .LASF3:
 	.string	"sbi_main"
 .LASF0:
 	.string	"GNU C17 9.3.0 -mcmodel=medany -mabi=lp64 -march=rv64imafd -g -O0 -fno-PIE -fomit-frame-pointer"
 .LASF1:
 	.string	"sbi/sbi_main.c"
-.LASF2:
-	.string	"/home/rlk/wxwang/benos"
 	.ident	"GCC: (Ubuntu 9.3.0-10ubuntu1) 9.3.0"
 	.section	.note.GNU-stack,"",@progbits
